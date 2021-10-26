@@ -1,0 +1,82 @@
+---
+title: "O valor da ação"
+subtitle: "à luz da jurimetria"
+author:  "José de Jesus Filho"
+date: "`r format(Sys.Date(),'São Paulo, %d de %B de %Y')`"
+encoding: "UTF-8"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    css: [default, "css/metropolis.css", "css/metropolis-fonts.css", "css/footer.css"]
+    includes:
+      after_body: html/insert-logo.html
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+# Para exportar em PDF: pagedown::chrome_print("index.html", timeout = 600)
+# knit: pagedown::chrome_print
+---
+layout: true
+  
+<div class="my-footer"><span>
+
+
+<a href="https://www.github.com/jjesusfilho">Github</a> |
+<a href="https://linkedin.com/jjesusfilho">Linkedin</a> | 
+<a href="http://jurimetria.consudata.com.br">Curso jurimetria</a> |
+<a href="http://rpsql.consudata.com.br">Ciência de Dados com R e PostgreSQL</a> |
+
+
+</span></div> 
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(fig.align = "center", message=FALSE, warning=FALSE)
+
+library(tidyverse)
+
+```
+---
+class: left
+
+# Valor da ação sob as perspectivas:
+
+## Jurídica  
+
+## Computacional  
+
+## Estatística
+
+
+---
+class: left
+
+# Perspectiva jurídica
+
+A petição inicial deve conter o valor da causa, artigos 291 a 293 e 319 do CPC, mesmo em ações que não implicam em pagamento de custas ou taxas judiciais, e.g., Habeas Data.
+
+## Situações verificadas:
+1. O valor da causa nem sempre corresponde ao valor efetivamente pedido e este nem sempre é corrigido pelo juízo, art. 293, § 3º e tampouco contestada.
+2. O valor da causa nem sempre corresponde ao valor arbitrado pelo juízo em virtude da procedência da ação.
+3. Em pedidos de prestações vincendas, o valor ora corresponde à soma de um ano, ora a apenas uma prestação.
+4. O pedido subsidiário em vez do principal.
+5. Ausência do valor da causa.
+6. Erro no pedido.
+7. 
+
+---
+class: left
+
+# Apoio computacional
+
+Usaremos um base 
+
+---
+class: Análise estatística
+
+1. Distribuição dos valores
+2. 
+
