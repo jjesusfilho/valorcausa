@@ -1,5 +1,5 @@
 ---
-title: "O valor da ação"
+title: "O valor da causa"
 subtitle: "à luz da jurimetria"
 author:  "José de Jesus Filho"
 date: "`r format(Sys.Date(),'São Paulo, %d de %B de %Y')`"
@@ -42,6 +42,32 @@ library(tidyverse)
 ---
 class: left
 
+# O valor da causa
+
+O valor da causa, exigência legal e presente na inicial, é usado para diferentes propósitos: 
+1. Montante pedido;
+2. cálculo das custas judiciais;
+3. honorários advocatícios;
+4. competência da ação.
+
+---
+class: left
+# Desenho da pesquisa
+
+1. Levantamento de hipóteses:
+   - Valor da causa explica ou é explicado"
+2. Escopo: 
+  - Competência: federal, estadual, trabalhista, jec, jefaz, família etc.
+  - Classe processual: procedimento comum ou do jec, MS, HC, tutela de urgência etc.
+  - Assunto: indenização por dano moral/material, tratamento de saúde, acidente de trânsito etc.
+  - Período.
+  - Órgão julgador: juízo, vara, foro, comarca.
+  - Partes: fazenda vs contribuinte, consumidor vs fornecedor, reclamante vs reclamado, cliente vs banco etc.
+  - Na ação ou na reconvenção?
+
+---
+class: left
+
 # Valor da ação sob as perspectivas:
 
 ## Jurídica  
@@ -59,24 +85,29 @@ class: left
 A petição inicial deve conter o valor da causa, artigos 291 a 293 e 319 do CPC, mesmo em ações que não implicam em pagamento de custas ou taxas judiciais, e.g., Habeas Data.
 
 ## Situações verificadas:
-1. O valor da causa nem sempre corresponde ao valor efetivamente pedido e este nem sempre é corrigido pelo juízo, art. 293, § 3º e tampouco contestada.
-2. O valor da causa nem sempre corresponde ao valor arbitrado pelo juízo em virtude da procedência da ação.
+1. O valor da causa nem sempre corresponde ao valor efetivamente pedido e este nem sempre é corrigido pelo juízo, art. 293, § 3º, e tampouco contestado.
+2. O valor da causa pode não ter relação alguma com valor arbitrado pelo juízo em virtude da procedência da ação.
 3. Em pedidos de prestações vincendas, o valor ora corresponde à soma de um ano, ora a apenas uma prestação.
 4. O pedido subsidiário em vez do principal.
 5. Ausência do valor da causa.
 6. Erro no pedido.
-7. 
 
 ---
 class: left
 
 # Apoio computacional
 
-Usaremos um base 
+Utilizaremos dois exemplos, um prospectivo, outro retrospectivo.
 
 ---
 class: Análise estatística
 
-1. Distribuição dos valores
-2. 
+1. Distribuição dos valores, características:
+   - Assimetria: Alta frequência de baixos valores.
+   - Poucos valores muito altos, que pode afetar a correlação com a outra variável de interesse.
+
+2. Métodos:
+   - Regressão quantílica?
+   - Discretizar os valores. Qual o ponto de corte? 
+   - Análise de sobrevivência: Cox proportional hazard não se se baseia na análise de resíduos e reduz a dependência a valores extremos.
 
